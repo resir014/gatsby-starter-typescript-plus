@@ -2,7 +2,7 @@
 
 > A starter kit for TypeScript-based Gatsby projects with sensible defaults.
 
-This is a starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites written in TypeScript. It includes the bare essentials for you to get started (e.g. styling, Markdown parsing), and basic productivity tooling that
+This is a starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites written in TypeScript. It includes the bare essentials for you to get started (styling, Markdown parsing, minimal toolset).
 
 ## Features
 
