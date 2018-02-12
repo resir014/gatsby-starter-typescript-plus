@@ -1,0 +1,51 @@
+// Official Gatsby colors taken from:
+// https://github.com/gatsbyjs/gatsby/blob/master/www/src/utils/colors.js
+$color-brand: #663399 !default;
+$color-lilac: #9d7cbf !default;
+$color-accent: #ffb238 !default;
+$color-success: #37b635 !default;
+$color-warning: #ec1818 !default;
+$color-ui-bright: #e0d6eb !default;
+$color-ui-light: #f5f3f7 !default;
+$color-ui-whisper: #fbfafc !default;
+$color-code: #fcf6f0;
+$color-gray-dark: hsla(270, 17.119554496%, 0%, 0.92) !default;
+$color-gray-copy: hsla(270, 15.797828016000002%, 0%, 0.88) !default;
+$color-gray-calm: rgba(0, 0, 0, 0.54) !default;
+
+$color-body: $color-gray-copy !default;
+$color-bg: $color-ui-light !default;
+$color-heading: $color-gray-dark !default;
+$color-link: $color-brand !default;
+$color-border: $color-ui-bright !default;
+$color-table-odd: darken($color-bg, 5%) !default;
+
+// Font stack
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, monospace !default;
+
+// Media breakpoints
+// (NOTE: Always use @media (min-width) when using these variables.)
+$media-breakpoint-xs: 0 !default;
+$media-breakpoint-sm: 576px !default;
+$media-breakpoint-md: 768px !default;
+$media-breakpoint-lg: 992px !default;
+$media-breakpoint-xl: 1200px !default;
+$media-breakpoint-xxl: 1480px !default;
+
+// Dimensions for grid
+$grid-max-width: 720px !default;
+$grid-max-width-lg: 960px !default;
+$grid-max-width-xl: 1140px !default;
+$grid-max-width-xxl: 1400px !default;
+$grid-container-padding: 1.5rem !default;
+
+// Font dimensions
+$font-size: 16px !default;
+$font-size-lg: 18px !default;
+$line-height: 1.45 !default;
+$line-height-heading: 1.2 !default;
+
+// Elements
+$header-height: 60px !default;

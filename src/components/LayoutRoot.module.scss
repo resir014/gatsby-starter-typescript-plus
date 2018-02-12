@@ -1,0 +1,8 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
