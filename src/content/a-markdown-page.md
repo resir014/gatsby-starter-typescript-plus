@@ -1,13 +1,19 @@
 ---
 layout: page
-title: "Example Markdown content"
+title: "Example Markdown page"
 ---
 
 Now we're writing in Markdown! Pretty nice, huh?
 
+The `content/` directory is where you put all of your Markdown content in. Gatsby will build your pages out of it. Gatsby will also follow the directory structure of your files too, so when you store a page at e.g. `content/projects/large-hadron-collider.md`, it will be built in `/projects/large-hadron-collider/`.
+
+A blog-friendly CSS is also included in this project. You can view examples of styled elements below.
+
 [That's cool! Okay, take me back home.](/)
 
 ---
+
+## Included styling
 
 Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
@@ -22,7 +28,7 @@ HTML defines a long list of available inline tags, a complete list of which can 
 - **To bold text**, use `<strong>`.
 - *To italicize text*, use `<em>`.
 - Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Avery Magnotti</cite>, should use `<cite>`.
+- Citations, like <cite>&mdash; Elon Musk</cite>, should use `<cite>`.
 - <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
 - Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
 
