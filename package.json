@@ -41,6 +41,7 @@
     "gatsby-transformer-sharp": "^1.6.18",
     "node-sass": "^4.7.2",
     "normalize.css": "^7.0.0",
+    "polished": "^1.9.2",
     "prism-themes": "https://github.com/PrismJS/prism-themes.git",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

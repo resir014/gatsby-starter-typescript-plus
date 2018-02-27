@@ -1,14 +1,18 @@
 import * as React from 'react'
-import * as classnames from 'classnames'
+import styled from 'styled-components'
 
-import * as styles from './LayoutRoot.module.scss'
+const StyledLayoutRoot = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`
 
 interface LayoutRootProps {
   className?: string
 }
 
 const LayoutRoot: React.SFC<LayoutRootProps> = ({ children, className }) => (
-  <div className={classnames(styles.root, className)}>{children}</div>
+  <StyledLayoutRoot className={className}>{children}</StyledLayoutRoot>
 )
 
 export default LayoutRoot

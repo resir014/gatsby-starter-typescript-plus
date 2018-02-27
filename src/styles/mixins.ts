@@ -1,5 +1,5 @@
 import { css, SimpleInterpolation } from 'styled-components'
-import { dimensions } from './styles'
+import { dimensions } from './variables'
 
 export const getEmSize = (size: number) => size / dimensions.fontSize.regular
 
