@@ -1,9 +1,7 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
 
-import 'normalize.css'
-import '../styles/index.scss'
-import 'prism-themes/themes/prism-atom-dark.css'
+import '../styles/normalize'
 
 import Header from '../components/Header'
 import LayoutRoot from '../components/LayoutRoot'
