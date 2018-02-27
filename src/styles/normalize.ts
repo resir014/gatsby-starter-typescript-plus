@@ -1,7 +1,7 @@
 import styledNormalize from 'styled-normalize'
 import { injectGlobal } from 'styled-components'
 import { dimensions, fonts, colors } from './variables'
-import { onEvent } from './mixins'
+import { onEvent, media } from './mixins'
 
 // tslint:disable-next-line:no-unused-expression
 injectGlobal`
@@ -13,7 +13,7 @@ injectGlobal`
   }
 
   // Make all elements from the DOM inherit from the parent box-sizing
-  // Since \`*\` has a specificity of 0, it does not override the \`html\` value
+  // Since '*' has a specificity of 0, it does not override the 'html value
   // making all elements inheriting from the root box-sizing value
   // See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
   *,
@@ -163,9 +163,9 @@ injectGlobal`
       }
     }
 
-    @media (min-width: $media-breakpoint-md) {
+    ${media.md`
       padding-right: 5rem;
       padding-left: 1.25rem;
-    }
+    `}
   }
 `
