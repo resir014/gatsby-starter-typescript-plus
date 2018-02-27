@@ -10,7 +10,7 @@ This is a starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites writte
 * TSLint (with custom TSLint rules)
 * Markdown rendering with Remark
 * Basic component structure
-* Styling with SCSS (and CSS Modules)
+* Styling with [styled-components](https://www.styled-components.com/)
 
 ## Geting started
 

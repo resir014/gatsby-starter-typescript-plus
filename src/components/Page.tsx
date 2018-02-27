@@ -1,14 +1,22 @@
 import * as React from 'react'
-import * as classnames from 'classnames'
+import styled from 'styled-components'
 
-import * as styles from './Page.module.scss'
+import { dimensions } from '../styles/variables'
+
+const StyledPage = styled.div`
+  display: block;
+  flex: 1;
+  position: relative;
+  padding: ${dimensions.containerPadding}rem;
+  margin-bottom: 3rem;
+`
 
 interface PageProps {
   className?: string
 }
 
 const Page: React.SFC<PageProps> = ({ children, className }) => (
-  <div className={classnames(styles.root, className)}>{children}</div>
+  <StyledPage className={className}>{children}</StyledPage>
 )
 
 export default Page

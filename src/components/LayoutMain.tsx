@@ -1,14 +1,18 @@
 import * as React from 'react'
-import * as classnames from 'classnames'
+import styled from 'styled-components'
 
-import * as styles from './LayoutMain.module.scss'
+const StyledLayoutMain = styled.main`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+`
 
 interface LayoutMainProps {
   className?: string
 }
 
 const LayoutMain: React.SFC<LayoutMainProps> = ({ children, className }) => (
-  <main className={classnames(styles.root, className)}>{children}</main>
+  <StyledLayoutMain className={className}>{children}</StyledLayoutMain>
 )
 
 export default LayoutMain
