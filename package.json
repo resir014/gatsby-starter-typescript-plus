@@ -58,6 +58,7 @@
     "gh-pages": "^1.1.0",
     "rimraf": "^2.6.2",
     "tslint": "^5.9.1",
+    "tslint-config-blvd": "github:blvdgroup/tslint-config-blvd",
     "tslint-react": "^3.4.0"
   }
 }
