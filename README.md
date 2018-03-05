@@ -27,6 +27,9 @@ A nodejs >= 6.0.0 setup with [yarn](https://yarnpkg.com/) is recommended.
 
 ``` bash
 # install dependencies
+yarn
+
+# ...or, for npm
 npm install
 
 # serve with hot reload at localhost:8000
