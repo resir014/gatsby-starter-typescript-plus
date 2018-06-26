@@ -1,10 +1,9 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import { transparentize } from 'polished'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 
 import { heights, dimensions, colors } from '../styles/variables'
-import { onEvent } from '../styles/mixins'
 import Container from './Container'
 
 const StyledHeader = styled.header`
@@ -26,9 +25,10 @@ const HomepageLink = styled(Link)`
   font-size: 1.5rem;
   font-weight: 600;
 
-  ${onEvent`
+  &:hover,
+  &:focus {
     text-decoration: none;
-  `};
+  }
 `
 
 interface HeaderProps {
