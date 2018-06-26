@@ -7,15 +7,10 @@ import { onEvent, media } from './mixins'
 injectGlobal`
   ${styledNormalize}
 
-  // Set up a decent box model on the root element
   html {
     box-sizing: border-box;
   }
 
-  // Make all elements from the DOM inherit from the parent box-sizing
-  // Since '*' has a specificity of 0, it does not override the 'html value
-  // making all elements inheriting from the root box-sizing value
-  // See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
   *,
   *::before,
   *::after {

@@ -8,7 +8,12 @@ const NotFoundPage = () => (
   <Page>
     <Container>
       <h1>404: Page not found.</h1>
-      <p>You've hit the void. <Link to="/" href="/">Go back.</Link></p>
+      <p>
+        You've hit the void.{' '}
+        <Link to="/" href="/">
+          Go back.
+        </Link>
+      </p>
     </Container>
   </Page>
 )

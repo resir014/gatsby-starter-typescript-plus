@@ -28,7 +28,7 @@ const HomepageLink = styled(Link)`
 
   ${onEvent`
     text-decoration: none;
-  `}
+  `};
 `
 
 interface HeaderProps {
@@ -38,7 +38,9 @@ interface HeaderProps {
 const Header: React.SFC<HeaderProps> = ({ title }) => (
   <StyledHeader>
     <HeaderInner>
-      <HomepageLink to="/" href="/">{title}</HomepageLink>
+      <HomepageLink to="/" href="/">
+        {title}
+      </HomepageLink>
     </HeaderInner>
   </StyledHeader>
 )

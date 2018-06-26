@@ -1,6 +1,7 @@
 {
-  "extends": ["tslint-config-blvd", "tslint-config-blvd/react"],
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "extends": ["tslint-config-blvd/react", "tslint-config-prettier"],
   "rules": {
-    "linebreak-style": [false]
+    "prettier": true
   }
 }
