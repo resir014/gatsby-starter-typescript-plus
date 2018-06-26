@@ -5,24 +5,31 @@ import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
 
+// prettier-ignore
+
+// There's currently a terribad bug on Gatsby where interface declarations
+// won't compile unless you add semicolons. Because of that, this file is
+// entirely ignored on Prettier.
+//
+// https://github.com/gatsbyjs/gatsby/issues/5789
 interface StaticQueryProps {
   site: {
     siteMetadata: {
-      title: string
-      description: string
+      title: string;
+      description: string;
       author: {
-        name: string
-        url: string
-      }
-    }
-  }
+        name: string;
+        url: string;
+      };
+    };
+  };
   markdownRemark: {
-    html: string
-    excerpt: string
+    html: string;
+    excerpt: string;
     frontmatter: {
-      title: string
-    }
-  }
+      title: string;
+    };
+  };
 }
 
 const PageTemplate: React.SFC = () => (
