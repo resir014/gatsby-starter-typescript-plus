@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
-import { StaticQuery } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 
 import '../styles/normalize'
 

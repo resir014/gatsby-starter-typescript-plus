@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { StaticQuery } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Page from '../components/Page'
 import Container from '../components/Container'
@@ -12,44 +12,42 @@ import IndexLayout from '../layouts'
 // entirely ignored on Prettier.
 //
 // https://github.com/gatsbyjs/gatsby/issues/5789
-interface StaticQueryProps {
-  site: {
-    siteMetadata: {
-      title: string;
-      description: string;
-      author: {
-        name: string;
-        url: string;
-      };
+interface PageTemplateProps {
+  data: {
+    site: {
+      siteMetadata: {
+        title: string;
+        description: string;
+        author: {
+          name: string;
+          url: string;
+        }
+      }
     };
-  };
-  markdownRemark: {
-    html: string;
-    excerpt: string;
-    frontmatter: {
-      title: string;
-    };
-  };
+    markdownRemark: {
+      html: string;
+      excerpt: string;
+      frontmatter: {
+        title: string;
+      }
+    }
+  }
 }
 
-const PageTemplate: React.SFC = () => (
+const PageTemplate: React.SFC<PageTemplateProps> = ({ data }) => (
   <IndexLayout>
-    <StaticQuery query={query}>
-      {(data: StaticQueryProps) => (
-        <Page>
-          <Container>
-            <h1>{data.markdownRemark.frontmatter.title}</h1>
-            <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-          </Container>
-        </Page>
-      )}
-    </StaticQuery>
+    <Page>
+      <Container>
+        <h1>{data.markdownRemark.frontmatter.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+      </Container>
+    </Page>
   </IndexLayout>
 )
 
 export default PageTemplate
 
-const query = graphql`
+export const query = graphql`
   query PageTemplateQuery($slug: String!) {
     site {
       siteMetadata {
