@@ -14,7 +14,7 @@ import LayoutMain from '../components/LayoutMain'
 // won't compile unless you add semicolons. Because of that, this file is
 // entirely ignored on Prettier.
 //
-// https://github.com/gatsbyjs/gatsby/issues/5789
+// https://github.com/gatsbyjs/gatsby/issues/6163
 type StaticQueryProps = {
   site: {
     siteMetadata: {

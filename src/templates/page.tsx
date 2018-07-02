@@ -11,7 +11,7 @@ import IndexLayout from '../layouts'
 // won't compile unless you add semicolons. Because of that, this file is
 // entirely ignored on Prettier.
 //
-// https://github.com/gatsbyjs/gatsby/issues/5789
+// https://github.com/gatsbyjs/gatsby/issues/6163
 interface PageTemplateProps {
   data: {
     site: {
