@@ -8,8 +8,6 @@ import Header from '../components/Header'
 import LayoutRoot from '../components/LayoutRoot'
 import LayoutMain from '../components/LayoutMain'
 
-// prettier-ignore
-
 // There's currently a terribad bug on Gatsby where interface declarations
 // won't compile unless you add semicolons. Because of that, this file is
 // entirely ignored on Prettier.
@@ -18,25 +16,25 @@ import LayoutMain from '../components/LayoutMain'
 type StaticQueryProps = {
   site: {
     siteMetadata: {
-      title: string;
-      description: string;
+      title: string
+      description: string
     }
   }
 }
 
-const query = graphql`
-  query IndexLayoutQuery {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
-  }
-`
-
 const IndexLayout: React.SFC = ({ children }) => (
-  <StaticQuery query={query}>
+  <StaticQuery
+    query={graphql`
+      query IndexLayoutQuery {
+        site {
+          siteMetadata {
+            title
+            description
+          }
+        }
+      }
+    `}
+  >
     {(data: StaticQueryProps) => (
       <LayoutRoot>
         <Helmet
