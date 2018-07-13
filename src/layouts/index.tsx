@@ -8,11 +8,6 @@ import Header from '../components/Header'
 import LayoutRoot from '../components/LayoutRoot'
 import LayoutMain from '../components/LayoutMain'
 
-// There's currently a terribad bug on Gatsby where interface declarations
-// won't compile unless you add semicolons. Because of that, this file is
-// entirely ignored on Prettier.
-//
-// https://github.com/gatsbyjs/gatsby/issues/6163
 type StaticQueryProps = {
   site: {
     siteMetadata: {
@@ -34,8 +29,7 @@ const IndexLayout: React.SFC = ({ children }) => (
         }
       }
     `}
-  >
-    {(data: StaticQueryProps) => (
+    render={(data: StaticQueryProps) => (
       <LayoutRoot>
         <Helmet
           title={data.site.siteMetadata.title}
@@ -48,7 +42,7 @@ const IndexLayout: React.SFC = ({ children }) => (
         <LayoutMain>{children}</LayoutMain>
       </LayoutRoot>
     )}
-  </StaticQuery>
+  />
 )
 
 export default IndexLayout
