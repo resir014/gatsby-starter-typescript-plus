@@ -120,7 +120,7 @@ injectGlobal`
   }
 
   strong {
-    color: $color-heading;
+    color: ${colors.black};
   }
 
   ul,
