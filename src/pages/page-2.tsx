@@ -5,7 +5,7 @@ import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
 
-export default () => (
+const PageTwo = () => (
   <IndexLayout>
     <Page>
       <Container>
@@ -13,17 +13,15 @@ export default () => (
         <p>Welcome to page 2</p>
         <ul>
           <li>
-            <Link to="/a-markdown-page/" href="/a-markdown-page/">
-              Show me some Markdown!
-            </Link>
+            <Link to="/a-markdown-page/">Show me some Markdown!</Link>
           </li>
           <li>
-            <Link to="/" href="/">
-              Take me back home.
-            </Link>
+            <Link to="/">Take me back home.</Link>
           </li>
         </ul>
       </Container>
     </Page>
   </IndexLayout>
 )
+
+export default PageTwo

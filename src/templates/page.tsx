@@ -5,11 +5,6 @@ import Page from '../components/Page'
 import Container from '../components/Container'
 import IndexLayout from '../layouts'
 
-// There's currently a terribad bug on Gatsby where interface declarations
-// won't compile unless you add semicolons. Because of that, this file is
-// entirely ignored on Prettier.
-//
-// https://github.com/gatsbyjs/gatsby/issues/6163
 interface PageTemplateProps {
   data: {
     site: {
