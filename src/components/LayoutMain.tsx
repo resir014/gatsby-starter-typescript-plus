@@ -1,5 +1,5 @@
 import * as React from 'react'
-import styled from 'styled-components'
+import styled from 'react-emotion'
 
 const StyledLayoutMain = styled.main`
   display: flex;

@@ -6,16 +6,15 @@ This is a starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites writte
 
 ## Features
 
-* TypeScript
-* TSLint (with custom TSLint rules)
-* Markdown rendering with Remark
-* Basic component structure
-* Styling with [styled-components](https://www.styled-components.com/)
+- TypeScript
+- TSLint (with custom TSLint rules)
+- Markdown rendering with Remark
+- Basic component structure
+- Styling with [emotion](https://emotion.sh/)
 
 ## Geting started
 
 Install this starter (assuming you have `gatsby-cli` installed) by running the following command:
-
 
 ```bash
 gatsby new project-name https://github.com/resir014/gatsby-starter-typescript-plus
@@ -25,7 +24,7 @@ gatsby new project-name https://github.com/resir014/gatsby-starter-typescript-pl
 
 A nodejs >= 6.0.0 setup with [yarn](https://yarnpkg.com/) is recommended.
 
-``` bash
+```bash
 # install dependencies
 yarn
 

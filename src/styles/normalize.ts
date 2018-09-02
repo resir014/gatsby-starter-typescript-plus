@@ -1,12 +1,9 @@
-import styledNormalize from 'styled-normalize'
-import { injectGlobal } from 'styled-components'
+import { injectGlobal } from 'emotion'
 import { dimensions, fonts, colors, breakpoints } from './variables'
 import { getEmSize } from './mixins'
 
 // tslint:disable-next-line:no-unused-expression
 injectGlobal`
-  ${styledNormalize}
-
   html {
     box-sizing: border-box;
   }

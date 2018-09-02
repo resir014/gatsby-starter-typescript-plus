@@ -1,5 +1,5 @@
 import * as React from 'react'
-import styled from 'styled-components'
+import styled from 'react-emotion'
 import { transparentize } from 'polished'
 import { Link } from 'gatsby'
 
@@ -38,9 +38,7 @@ interface HeaderProps {
 const Header: React.SFC<HeaderProps> = ({ title }) => (
   <StyledHeader>
     <HeaderInner>
-      <HomepageLink to="/" href="/">
-        {title}
-      </HomepageLink>
+      <HomepageLink to="/">{title}</HomepageLink>
     </HeaderInner>
   </StyledHeader>
 )
