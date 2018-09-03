@@ -2,8 +2,8 @@
 
 const path = require('path')
 
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
 
   // Sometimes, optional fields tend to get not picked up by the GraphQL
   // interpreter if not a single content uses it. Therefore, we're putting them
@@ -32,14 +32,14 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
       createNodeField({
         node,
         name: 'layout',
-        value: layout || '',
+        value: layout || ''
       })
     }
   }
 }
 
-exports.createPages = async ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
 
   const allMarkdown = await graphql(`
     {

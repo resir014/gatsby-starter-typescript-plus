@@ -1,12 +1,9 @@
-import styledNormalize from 'styled-normalize'
-import { injectGlobal } from 'styled-components'
-import { dimensions, fonts, colors } from './variables'
-import { onEvent, media } from './mixins'
+import { injectGlobal } from 'emotion'
+import { dimensions, fonts, colors, breakpoints } from './variables'
+import { getEmSize } from './mixins'
 
 // tslint:disable-next-line:no-unused-expression
 injectGlobal`
-  ${styledNormalize}
-
   html {
     box-sizing: border-box;
   }
@@ -33,14 +30,14 @@ injectGlobal`
     -ms-text-size-adjust: 100%;
   }
 
-  // Set defaults for links
   a {
     color: ${colors.brand};
     text-decoration: none;
 
-    ${onEvent`
+    &:hover,
+    &:focus {
       text-decoration: underline;
-    `}
+    }
   }
 
   img {
@@ -49,7 +46,6 @@ injectGlobal`
     position: relative;
   }
 
-  // Figure elements
   figure {
     margin: 2rem 0;
   }
@@ -158,9 +154,9 @@ injectGlobal`
       }
     }
 
-    ${media.md`
+    @media (min-width: ${getEmSize(breakpoints.md)}em) {
       padding-right: 5rem;
       padding-left: 1.25rem;
-    `}
+    }
   }
 `
