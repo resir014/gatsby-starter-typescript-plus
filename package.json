@@ -14,9 +14,11 @@
     "clean": "rimraf public",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "dev": "gatsby develop",
-    "lint": "tslint 'src/**/*.{ts,tsx}'",
+    "format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
+    "lint": "tslint 'src/**/*.{ts,tsx}' -p tsconfig.json",
     "start": "npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run type-check && npm run lint",
+    "type-check": "tsc"
   },
   "engines": {
     "node": ">=8.0.0"
