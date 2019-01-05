@@ -24,14 +24,14 @@
     "node": ">=8.0.0"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.5",
+    "@emotion/styled": "^10.0.5",
     "babel-plugin-styled-components": "^1.7.1",
     "classnames": "^2.2.6",
-    "emotion": "^9.2.9",
-    "emotion-server": "^9.2.9",
-    "gatsby": "^2.0.3",
+    "gatsby": "^2.0.85",
     "gatsby-image": "^2.0.5",
     "gatsby-plugin-canonical-urls": "^2.0.5",
-    "gatsby-plugin-emotion": "^2.0.5",
+    "gatsby-plugin-emotion": "^4.0.1",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sharp": "^2.0.5",
     "gatsby-plugin-typescript": "^2.0.0",
@@ -51,7 +51,6 @@
     "prismjs": "^1.15.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-emotion": "^9.2.9",
     "react-helmet": "^5.2.0",
     "typescript": "^3.0.3"
   },
