@@ -1,9 +1,7 @@
-import { injectGlobal } from 'emotion'
 import { dimensions, fonts, colors, breakpoints } from './variables'
 import { getEmSize } from './mixins'
 
-// tslint:disable-next-line:no-unused-expression
-injectGlobal`
+export default `
   html {
     box-sizing: border-box;
   }
@@ -74,7 +72,7 @@ injectGlobal`
 
   tbody {
     tr {
-      &:nth-child(odd) {
+      &:nth-of-type(odd) {
         td {
           background-color: ${colors.ui.whisper};
         }
