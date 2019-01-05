@@ -28,7 +28,7 @@
     "@emotion/styled": "^10.0.5",
     "babel-plugin-styled-components": "^1.7.1",
     "classnames": "^2.2.6",
-    "gatsby": "^2.0.3",
+    "gatsby": "^2.0.85",
     "gatsby-image": "^2.0.5",
     "gatsby-plugin-canonical-urls": "^2.0.5",
     "gatsby-plugin-emotion": "^4.0.1",
