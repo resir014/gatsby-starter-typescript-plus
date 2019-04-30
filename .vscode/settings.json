@@ -2,9 +2,7 @@
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "editor.renderWhitespace": "boundary",
-  "editor.rulers": [
-    140
-  ],
+  "editor.rulers": [140],
   "editor.formatOnSave": true,
   "files.encoding": "utf8",
   "files.trimTrailingWhitespace": true,
@@ -12,5 +10,12 @@
   "search.exclude": {
     "public/**": true,
     "node_modules/**": true
-  }
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    { "language": "typescript", "autoFix": true },
+    { "language": "typescriptreact", "autoFix": true }
+  ]
 }

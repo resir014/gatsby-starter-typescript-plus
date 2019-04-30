@@ -9,7 +9,7 @@ import Header from '../components/Header'
 import LayoutRoot from '../components/LayoutRoot'
 import LayoutMain from '../components/LayoutMain'
 
-type StaticQueryProps = {
+interface StaticQueryProps {
   site: {
     siteMetadata: {
       title: string
