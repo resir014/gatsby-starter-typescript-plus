@@ -12,33 +12,70 @@ This is a starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites writte
 - Basic component structure
 - Styling with [emotion](https://emotion.sh/)
 
-## Geting started
+## 🚀 Quick start
 
-Install this starter (assuming you have `gatsby-cli` installed) by running the following command:
+> A nodejs >= 6.0.0 setup with [yarn](https://yarnpkg.com/) is recommended.
+
+1. **Create a gatsby site using CLI**
+
+Install `gatsby-cli` package globally on your machine.
+
+```bash
+# using NPM
+npm install -g gatsby-cli
+
+# using YARN
+yarn global add gatsby-cli
+```
+
+Use the `gatsby-cli` to create a new site and install its dependencies.
 
 ```bash
 gatsby new project-name https://github.com/resir014/gatsby-starter-typescript-plus
 ```
 
-## Developing
+2. **Start up development server.**
 
-A nodejs >= 6.0.0 setup with [yarn](https://yarnpkg.com/) is recommended.
+Move to project's directory.
 
 ```bash
-# install dependencies
-yarn
+cd project-name/
+```
 
-# ...or, for npm
-npm install
+Start your site.
 
-# serve with hot reload at localhost:8000
+```bash
+# using NPM
 npm start
 
-# build for production
+# using YARN
+yarn start
+```
+
+Open source code using your favorite IDE/Text editor and navigate to `src/` directory, this is where your application live.
+
+3. **Build your application for production.**
+
+Once you're finished, you can make production build of your app using:
+
+```bash
+# using NPM
 npm run build
 
-# build for production and push to gh-pages branch
+# using YARN
+yarn build
+```
+
+4. **Deploy your app to Github pages!**
+
+After building your application in step 3, you're ready to publish your app and go online!
+
+```bash
+# using NPM
 npm run deploy
+
+# using YARN
+yarn deploy
 ```
 
 ## Credits
