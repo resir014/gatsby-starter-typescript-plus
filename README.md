@@ -11,7 +11,7 @@
 
 This is a starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites written in TypeScript. It includes the bare essentials for you to get started (styling, Markdown parsing, minimal toolset).
 
-## Features
+## 🗒️ Features
 
 - TypeScript
 - ESLint (with custom ESLint rules)
@@ -23,7 +23,7 @@ This is a starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites writte
 
 > A nodejs >= 6.0.0 setup with [yarn](https://yarnpkg.com/) is recommended.
 
-1.  **Create a gatsby site using CLI**
+1.  **Create a Gatsby site.**
 
     Install `gatsby-cli` package globally on your machine.
 
@@ -41,7 +41,7 @@ This is a starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites writte
     gatsby new project-name https://github.com/resir014/gatsby-starter-typescript-plus
     ```
 
-2.  **Start up development server.**
+2.  **Start developing.**
 
     Move to project's directory.
 
